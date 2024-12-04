@@ -6,14 +6,14 @@
         "lat": 12.9833,
         "lon": 77.5833,
         "tz_id": "Asia/Kolkata",
-        "localtime_epoch": 1733287531,
-        "localtime": "2024-12-04 10:15"
+        "localtime_epoch": 1733288461,
+        "localtime": "2024-12-04 10:31"
     },
     "current": {
-        "last_updated_epoch": 1733287500,
-        "last_updated": "2024-12-04 10:15",
-        "temp_c": 24.3,
-        "temp_f": 75.7,
+        "last_updated_epoch": 1733288400,
+        "last_updated": "2024-12-04 10:30",
+        "temp_c": 24.2,
+        "temp_f": 75.6,
         "is_day": 1,
         "condition": {
             "text": "Partly cloudy",
@@ -30,8 +30,8 @@
         "precip_in": 0.0,
         "humidity": 83,
         "cloud": 50,
-        "feelslike_c": 25.8,
-        "feelslike_f": 78.5,
+        "feelslike_c": 25.7,
+        "feelslike_f": 78.3,
         "windchill_c": 23.2,
         "windchill_f": 73.8,
         "heatindex_c": 25.1,

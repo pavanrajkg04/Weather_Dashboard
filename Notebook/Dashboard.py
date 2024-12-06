@@ -1,12 +1,24 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+from datetime import datetime
+import time
 
-# URL of the raw data file in GitHub repository
-github_raw_url = 'https://raw.githubusercontent.com/username/repository/branch/path/to/your/file.csv'
+def main():
+    st.title("Bengaluru Weather Dashboard")
 
-# Read the CSV file into a DataFrame
-df = pd.read_csv(github_raw_url)
+    # Load the data
+    data_url = 'https://raw.githubusercontent.com/pavanrajkg04/Weather_Dashboard/main/Notebook/data_table.xlsx'
+    data = pd.read_excel(data_url)
 
-# Display the DataFrame in Streamlit
-st.title('Data from GitHub')
-st.write(df)
+    # Show current time and weather information
+    st.write("Current Time: ", datetime.now())
+    st.write("Latitude: ", round(data['lat'].iloc[-1], 2), 'Longitude: ', round(data['lon'].iloc[-1], 2))
+
+    # Line chart of temperature over time
+    st.line_chart(data=data, x='localtime', y='temp_c', use_container_width=True)
+
+# Main Streamlit app execution
+if __name__ == '__main__':
+    main()
+

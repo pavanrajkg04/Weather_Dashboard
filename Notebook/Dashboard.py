@@ -3,10 +3,8 @@ import streamlit as st
 import duckdb as ddb
 
 
-conn = ddb.connect('../weatherdata')
+conn = ddb.connect('GitHub\Weather_Dashboard\weatherdata')
+print(conn)
 
-data_table = conn.execute('''
-                          select * from raw.DAILY_WEATHER_DATA
-                          ''').fetch_df()
+conn.close()
 
-print(data_table.head)

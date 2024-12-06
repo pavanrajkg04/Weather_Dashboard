@@ -5,7 +5,7 @@ from datetime import datetime
 
 def main():
     st.title("Bengaluru Weather Dashboard")
-    data = pd.read_excel('data_table.xlsx')
+    data = pd.read_excel('https://github.com/pavanrajkg04/Weather_Dashboard/blob/main/Notebook/data_table.xlsx')
     st.write(datetime.now())
     st.write("Latitute : ",round(data['lat'].iloc[-1],2), 'Longitute : ',round(data['lon'].iloc[-1],2))
     st.line_chart(data=data,x='localtime',y='temp_c',x_label='Date',y_label='Temp C',color='#ffaa00',width=300,height=500,use_container_width=True)

@@ -57,7 +57,7 @@ def main():
     # data = load_data(file)
 
     # Load the data
-    data_url = 'https://raw.githubusercontent.com/pavanrajkg04/Weather_Dashboard/main/Notebook/data_table.xlsx'
+    data_url = 'data_table.xlsx'
     data = pd.read_excel(data_url)
 
     # Show current time and weather information

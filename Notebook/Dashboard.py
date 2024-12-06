@@ -72,7 +72,7 @@ def main():
 # Main Streamlit app execution
 while True:
         main()
-        time.sleep(10*60)
+        time.sleep(100)
         st.rerun()
         
         

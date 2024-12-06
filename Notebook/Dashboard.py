@@ -3,7 +3,7 @@ import streamlit as st
 import duckdb as ddb
 
 
-conn = ddb.connect('GitHub\Weather_Dashboard\weatherdata')
+conn = ddb.connect('../weatherdata')
 print(conn)
 
 conn.close()
